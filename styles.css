@@ -1,0 +1,88 @@
+body {
+  background: rgb(115, 168, 87);
+}
+
+#quote-box {
+  position: fixed;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+}
+
+blockquote {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0.25em 0;
+  padding: 0.35em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+}
+
+blockquote:before {
+  display: block;
+  padding-left: 10px;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -5px;
+  top: -20px;
+  color: #7a7a7a;
+}
+
+blockquote cite {
+  color: #999999;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+  text-align: end;
+}
+
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+
+#action {
+  margin-top: 20px;
+  text-align: end;
+}
+
+button {
+  text-align: center;
+  font-size: 1em;
+  padding: 0.5em;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgb(115, 168, 87);
+  border: none;
+  color: white;
+  outline: none;
+}
+
+button:hover {
+  color: rgb(115, 168, 87);
+  background-color: white;
+  border: none;
+}
+
+a.button {
+  appearance: button;
+
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 3em;
+  cursor: pointer;
+  background-color: rgb(115, 168, 87);
+  color: white;
+}
+
+a.button:hover {
+  color: rgb(115, 168, 87);
+  background-color: white;
+}
+
